@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Travel App</title>
+      <link rel="icon" href="https://syersy.com/Syersy/externalFiles/Imgs/logoNavbar3.webp">
+    </head>
+    <body>
+      <main>
+        <section id="title">
+          <h1 class="appTitle">Travel App</h1>
+        </section>
+        <section>
+            <form id="searchForm" class="mainForm">
+              <div>
+                <h2 id="">Let's go on holiday!!!</h2>
+              </div> 
+              <input id="when" type="text" name="input" value="" placeholder="When? YYYY-MM-DD (2020-08-23)">
+              <input id="name" type="text" name="input" value="" placeholder="Place">
+              <input id="submitBtn" type="submit" name="" value="submit">
+            </form>
+        <section>
+        <section id="searchResults">
+            <strong>Form Results:</strong>
+            <div id="results"></div>
+            <div id="departure"></div>
+            <div id="forecast"></div>
+            <div id="toShowPic"></div>
+        </section>
+        <section id="todoList">
+          <div id="todoListHeader" class="header">
+            <h2>My To Do List</h2>
+            <input type="text" id="myInput" placeholder="Activity">
+            <button type="button" onclick=Client.AddActivity() id="fontColor" class="addBtn">Add to List</button>
+          </div>
+          <ul id="list">
+            <li>Let's have fun!</li>
+          </ul>
+        </section>
+      </main>
+      <script type="text/javascript" src="/main.js" ></script>
+      <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+      </script>
+    </body>
+</html>
