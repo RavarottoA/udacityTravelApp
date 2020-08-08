@@ -4,7 +4,7 @@
     "verbose": true
   },
   "version": "1.0.0",
-  "description": "It is a journal that stores the user's feeling and the wheather that day",
+  "description": "It is a travel app that allows you organize your trip better",
   "main": "server.js",
   "dependencies": {
     "axios": "^0.19.2",
@@ -36,7 +36,7 @@
   },
   "scripts": {
     "test2": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./src/server/server.js",
+    "start": "node ./src/server/server.js",
     "build-prod": "webpack --config webpack.prod.js",
     "dev": "webpack-dev-server  --config webpack.dev.js --open",
     "test": "jest --forceExit --detectOpenHandles"
